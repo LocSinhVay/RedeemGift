@@ -1,0 +1,13 @@
+﻿namespace RedeemGiftAPI.Models.Menu.Inputs
+{
+    public class UpdateMenuInput
+    {
+        public int MenuID { get; set; }
+        public string MenuName { get; set; }
+        public string MenuPath { get; set; }
+        public string Icon { get; set; }
+        public int? ParentId { get; set; }
+        public int Status { get; set; }
+        public int? DisplayOrder { get; set; }
+    }
+}

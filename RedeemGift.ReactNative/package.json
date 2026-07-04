@@ -1,0 +1,42 @@
+{
+  "name": "redeemgift-mobile",
+  "version": "0.0.1",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "set EXPO_NO_DEPENDENCY_VALIDATION=1&& expo start -c",
+    "start:clear": "set EXPO_NO_DEPENDENCY_VALIDATION=1&& expo start -c",
+    "start:offline": "expo start --offline",
+    "start:tunnel": "set EXPO_NO_DEPENDENCY_VALIDATION=1&& expo start --tunnel -c",
+    "android": "set EXPO_NO_DEPENDENCY_VALIDATION=1&& expo start --android",
+    "ios": "set EXPO_NO_DEPENDENCY_VALIDATION=1&& expo start --ios",
+    "web": "set EXPO_NO_DEPENDENCY_VALIDATION=1&& expo start --web"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/native-stack": "^6.9.12",
+    "axios": "^1.4.0",
+    "expo": "~54.0.0",
+    "expo-audio": "~1.1.1",
+    "expo-constants": "~18.0.13",
+    "expo-image-picker": "~17.0.11",
+    "expo-status-bar": "~3.0.9",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-dropdown-picker": "^5.4.6",
+    "react-native-qrcode-svg": "^6.3.21",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "react-native-svg": "15.12.1",
+    "react-native-web": "^0.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.10",
+    "babel-preset-expo": "~54.0.10",
+    "dotenv": "^16.3.1",
+    "expo-module-scripts": "^56.0.3",
+    "typescript": "~5.9.2"
+  }
+}
