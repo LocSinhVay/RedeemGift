@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Trang tải ứng dụng RedeemGift Mobile dành cho Android."
+  >
+
+  <title>RedeemGift Mobile - Tải APK</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Thư viện tạo QR trực tiếp trên trình duyệt -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"
+    defer
+  ></script>
+
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <main class="page">
+    <section class="download-card">
+
+      <div class="app-icon-wrapper">
+        <img
+          class="app-icon"
+          src="app-icon.png"
+          alt="RedeemGift Mobile"
+        >
+      </div>
+
+      <p class="eyebrow">ANDROID APPLICATION</p>
+
+      <h1>RedeemGift Mobile</h1>
+
+      <p class="description">
+        Ứng dụng quản lý đổi quà được phát triển bằng
+        React Native Expo và ASP.NET Core Web API.
+      </p>
+
+      <div class="app-meta">
+        <span>Phiên bản 1.0.0</span>
+        <span>Android APK</span>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Nội dung dành cho máy tính -->
+      <section id="desktopContent" class="device-content hidden">
+        <div id="qrcode" class="qr-code"></div>
+
+        <h2>Quét để tải ứng dụng</h2>
+
+        <p class="device-message">
+          Dùng điện thoại Android quét mã QR để mở trang tải.
+        </p>
+
+        <a
+          class="button button-primary"
+          href="https://github.com/it-vayls/RedeemGift/releases/download/v1.0.0/RedeemGift-v1.0.0.apk"
+        >
+          Tải APK trên máy tính
+        </a>
+      </section>
+
+      <!-- Nội dung dành cho Android -->
+      <section id="androidContent" class="device-content hidden">
+        <div class="status-icon">✓</div>
+
+        <h2>Sẵn sàng tải xuống</h2>
+
+        <p class="device-message">
+          Thiết bị Android đã được nhận diện.
+        </p>
+
+        <a
+          class="button button-primary"
+          href="https://github.com/it-vayls/RedeemGift/releases/download/v1.0.0/RedeemGift-v1.0.0.apk"
+        >
+          Tải APK ngay
+        </a>
+      </section>
+
+      <!-- Nội dung dành cho iPhone/iPad -->
+      <section id="iosContent" class="device-content hidden">
+        <div class="warning-box">
+          <strong>Không thể cài APK trên iPhone hoặc iPad</strong>
+
+          <p>
+            File APK chỉ sử dụng được trên Android.
+            Vui lòng mở trang này bằng điện thoại Android.
+          </p>
+        </div>
+      </section>
+
+      <div class="install-guide">
+        <h3>Hướng dẫn cài đặt</h3>
+
+        <ol>
+          <li>Tải file APK về điện thoại Android.</li>
+          <li>Mở file APK vừa tải xuống.</li>
+          <li>Cho phép cài ứng dụng từ trình duyệt khi được hỏi.</li>
+          <li>Nhấn Cài đặt và mở ứng dụng.</li>
+        </ol>
+      </div>
+
+      <div class="secondary-actions">
+        <a
+          class="button button-secondary"
+          href="https://github.com/it-vayls/RedeemGift"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Xem mã nguồn GitHub
+        </a>
+
+        <a
+          class="button button-secondary"
+          href="https://github.com/it-vayls/RedeemGift/releases"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Xem các phiên bản
+        </a>
+      </div>
+
+      <p class="security-note">
+        Android có thể hiển thị cảnh báo vì ứng dụng được cài trực tiếp
+        bằng APK và chưa được phân phối qua Google Play.
+      </p>
+    </section>
+
+    <footer>
+      Developed by it-vayls
+    </footer>
+  </main>
+</body>
+</html>
