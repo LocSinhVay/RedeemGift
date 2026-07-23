@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: #0f172a;
+  background: #f5f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 48px 20px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(37, 99, 235, 0.18),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(14, 165, 233, 0.16),
+      transparent 35%
+    ),
+    #f5f7fb;
+}
+
+.download-card {
+  width: 100%;
+  max-width: 540px;
+  padding: 38px;
+
+  background: rgba(255, 255, 255, 0.97);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 28px;
+
+  box-shadow:
+    0 24px 60px rgba(15, 23, 42, 0.12),
+    0 4px 16px rgba(15, 23, 42, 0.05);
+
+  text-align: center;
+}
+
+.app-icon-wrapper {
+  width: 104px;
+  height: 104px;
+  margin: 0 auto 20px;
+  padding: 7px;
+
+  background: linear-gradient(135deg, #dbeafe, #eff6ff);
+  border-radius: 24px;
+
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+}
+
+.app-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  object-fit: cover;
+  border-radius: 19px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+h1 {
+  margin: 0;
+
+  color: #0f172a;
+  font-size: clamp(30px, 5vw, 42px);
+  line-height: 1.15;
+}
+
+.description {
+  max-width: 430px;
+  margin: 16px auto 20px;
+
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.app-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.app-meta span {
+  padding: 7px 12px;
+
+  color: #334155;
+  background: #f1f5f9;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.divider {
+  height: 1px;
+  margin: 28px 0;
+
+  background: #e2e8f0;
+}
+
+.device-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.qr-code {
+  display: inline-flex;
+  padding: 18px;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.qr-code img,
+.qr-code canvas {
+  display: block;
+  max-width: 100%;
+}
+
+.device-content h2 {
+  margin: 24px 0 6px;
+
+  color: #0f172a;
+  font-size: 22px;
+}
+
+.device-message {
+  margin: 0 0 20px;
+
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.status-icon {
+  width: 72px;
+  height: 72px;
+
+  display: grid;
+  place-items: center;
+
+  color: #ffffff;
+  background: #16a34a;
+
+  border-radius: 50%;
+
+  font-size: 36px;
+  font-weight: 700;
+
+  box-shadow: 0 12px 28px rgba(22, 163, 74, 0.25);
+}
+
+.button {
+  width: 100%;
+  min-height: 50px;
+  padding: 14px 18px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 14px;
+
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb, #0284c7);
+
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.22);
+}
+
+.button-primary:hover {
+  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.28);
+}
+
+.button-secondary {
+  color: #1e40af;
+  background: #eff6ff;
+
+  border: 1px solid #bfdbfe;
+}
+
+.warning-box {
+  width: 100%;
+  padding: 18px;
+
+  color: #9a3412;
+  background: #fff7ed;
+
+  border: 1px solid #fed7aa;
+  border-radius: 16px;
+
+  text-align: left;
+}
+
+.warning-box strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.warning-box p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.install-guide {
+  margin-top: 28px;
+  padding: 20px;
+
+  color: #334155;
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+
+  text-align: left;
+}
+
+.install-guide h3 {
+  margin: 0 0 12px;
+
+  color: #0f172a;
+  font-size: 16px;
+}
+
+.install-guide ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.install-guide li {
+  margin: 8px 0;
+  line-height: 1.55;
+}
+
+.secondary-actions {
+  display: grid;
+  gap: 12px;
+
+  margin-top: 16px;
+}
+
+.security-note {
+  margin: 20px 0 0;
+
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: 22px;
+
+  color: #64748b;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 18px 12px;
+  }
+
+  .download-card {
+    padding: 28px 20px;
+    border-radius: 22px;
+  }
+
+  .app-icon-wrapper {
+    width: 88px;
+    height: 88px;
+  }
+
+  .qr-code {
+    padding: 14px;
+  }
+}
